@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <title>Dr. Alexander Ferling</title>
+    <link rel="shortcut icon" href="./index/favicon.png" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="http://pauli.uni-muenster.de/~ferling/favicon.png" type="image/vnd.microsoft.icon">
+    <link href="./index/styles_startseite.css" rel="stylesheet" media="screen">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10%;
+        }
+        
+        .header, .footer {
+            width: 100%;
+            background-color: #4c708e;
+            color: #edf0f3;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .content {
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .content h2 {
+            color: #333;
+        }
+        
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .content li {
+            margin-bottom: 10px;
+        }
+        
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #eee;
+            padding: 20px;
+            font-size: 14px;
+            font-family: Verdana, sans-serif;
+        }
+        
+        .cookie-banner a.button {
+            cursor: pointer;
+            background: #ccc;
+            padding: 8px 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            float: right;
+        }
+        
+        .cookie-banner a.button:hover {
+            background-color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dr. Alexander Ferling</h1>
+            <p>Simulation zum Dreikörperproblem</p>
+        </div>
+		
+		
+		
+		
+		  <!--Beginn Content-->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 100%; overflow-x: auto; display: block;">
+           <tbody>
+               <tr height="450">
+                   <td class="E" align="left" height="450" valign="top">
+           	           <p id="ThreeBodyProblem-notSupportedMessage" class="ThreeBodyProblem-alert ThreeBodyProblem-isHiddenBlock">Please use a newer browser to see the simulation.</p><div class="ThreeBodyProblem-container isFullScreenWide isUnselectable" style="height: 871px;">
+    <div class="ThreeBodyProblem-sun" style="width: 41.5411px; transform: translate(-360280px, 26965.2px);"><img src="./index/sun.png" class="ThreeBodyProblem-spin ThreeBodyProblem-bodyImage" alt="Sun"></div>
+    <div class="ThreeBodyProblem-earth" style="width: 41.9004px; transform: translate(1878.54px, 223.314px);"><img src="./index/earth.png" alt="Earth" class="ThreeBodyProblem-spin ThreeBodyProblem-bodyImage"></div>
+    <div class="ThreeBodyProblem-jupiter" style="width: 41.9004px; transform: translate(355609px, -22239.2px);"><img src="./index/jupiter_juno.png" alt="Jupiter" class="ThreeBodyProblem-spin ThreeBodyProblem-bodyImage"></div>
+    <img src="./index/center_of_mass.png" alt="Center of mass" class="ThreeBodyProblem-centerOfMass">
+
+    <canvas class="ThreeBodyProblem-canvas" width="2369" style="width: 100%; height: 871px;" height="871"></canvas>
+
+    <div class="ThreeBodyProblem-hudContainer">
+      <div class="ThreeBodyProblem-hudContainerChild">
+        <div class="ThreeBodyProblem-leftBottomButtonCantainer">
+          <a class="ThreeBodyProblem-leftBottomButton ThreeBodyProblem-mass1Button ThreeBodyProblem-doesChangeOpacityOnHover" href="https://ferling.lima-city.de/#" title="Masse 1"><img src="./index/mass_one_icon.png" alt="Mass 1" class="ThreeBodyProblem-leftBottomImage"></a>
+          <a class="ThreeBodyProblem-leftBottomButton ThreeBodyProblem-mass2Button ThreeBodyProblem-doesChangeOpacityOnHover" href="https://ferling.lima-city.de/#" title="Masse 2"><img src="./index/mass_two_icon.png" alt="Mass 2" class="ThreeBodyProblem-leftBottomImage"></a>
+          <a class="ThreeBodyProblem-leftBottomButton ThreeBodyProblem-mass3Button ThreeBodyProblem-doesChangeOpacityOnHover" href="https://ferling.lima-city.de/#" title="Masse 3"><img src="./index/mass_three_icon.png" alt="Mass 3" class="ThreeBodyProblem-leftBottomImage"></a>
+          <a class="ThreeBodyProblem-leftBottomButton ThreeBodyProblem-speedButton ThreeBodyProblem-doesChangeOpacityOnHover" href="https://ferling.lima-city.de/#" title="Geschwindigkeit"><img src="./index/clock_icon.png" alt="Speed" class="ThreeBodyProblem-leftBottomImage"></a>
+        </div>
+        <a class="ThreeBodyProblem-reload ThreeBodyProblem-doesChangeOpacityOnHover" href="https://ferling.lima-city.de/#" title="Reload"><img src="./index/reload_icon.png" alt="Restart" class="ThreeBodyProblem-reloadIcon"></a>
+      </div>
+    </div>
+</div><div class="ThreeBodyProblem-isTextCentered ThreeBodyProblem-hasTopMarginSmall ThreeBodyProblem-hasNegativeBottomMarginNormal isUnselectable">
+  <span class="ThreeBodyProblem-sliderLabel">Masse der Sonne : 0.9745</span>
+</div><div class="SickSlider ThreeBodyProblem-slider isUnselectable ThreeBodyProblem-sliderSun">
+  <div class="SickSlider-stripe"></div>
+  <div class="SickSlider-head" style="left: 563px;"></div>
+</div><button class="ThreeBodyProblem-preset ThreeBodyProblem-button ThreeBodyProblem-button--isSelected" data-name="FigureEight">Stabile 8</button><button class="ThreeBodyProblem-preset ThreeBodyProblem-button" data-name="SunEarthJupiter">Sonne, Erde und Jupiter</button><button class="ThreeBodyProblem-preset ThreeBodyProblem-button" data-name="LagrangePoint5">Lagrange-Punkt L5</button><button class="ThreeBodyProblem-preset ThreeBodyProblem-button" data-name="Kepler16">Kepler-16</button><button class="ThreeBodyProblem-preset ThreeBodyProblem-button" data-name="Chaotic">Chaotische Bewegung</button><p class="ThreeBodyProblem-debugOutput"></p><table border="0" cellpadding="0" cellspacing="0" width="100%">
+					   
+                  
+						   
+						   
+		<!-- Message shown in old browsers. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./index/three-body-problem-simulator_2.js"></script>				   
+						   
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <div class="content">
+		
+		    <h2>Eine Unterrichtsdokumentation:</h2>
+            <ul>
+                <li><a href="./Files/Unterrichtsdokumentation.pdf" target="_blank">Binnendifferenzierung in der Eingangsklasse des technischen Gymnasiums mit Hilfe moderner Medien</a></li>
+            </ul>
+		
+
+            <h2>Ein paar meiner Apps zur Physik finden sich im Google Play Store:</h2>
+            <ul>
+                <li><a href="https://play.google.com/store/apps/dev?id=7087839168759673845" target="_blank">Learning Apps zur Physik</a></li>
+            </ul>
+            <h2>Meine Doktorarbeit:</h2>
+            <ul>
+                <li><a href="./Files/diss_ferling.pdf" target="_top">Numerische Methoden zur Erforschung einer N=1 Super Yang-Mills-Theorie mit SU(2) und SU(3) Wilson Fermionen</a></li>
+            </ul>
+            <h2>Publikationen:</h2>
+            <ul>
+				<li><a href="https://pubmed.ncbi.nlm.nih.gov/32457245/" target="_blank">2020: Conidial Melanin of the Human-Pathogenic Fungus Aspergillus fumigatus Disrupts Cell Autonomous Defenses in Amoebae</a></li>
+				<li><a href="http://arxiv.org/abs/1003.2073" target="_blank">2010: Simulation of 4d N=1 supersymmetric Yang-Mills theory with Symanzik improved gauge action and stout smearing</a></li>
+			    <li><a href="http://www.amazon.de/Supersymmetrie-auf-dem-Gitter-Yang-Mills-Theorie/dp/3838110021/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1270497811&amp;sr=8-2" target="_blank">2009: Supersymmetrie auf dem Gitter: Numerische Methoden zur Erforschung einer Super Yang-Mills-Theorie mit Wilson Fermionen (Fachbuch)</a></li>
+				<li><a href="http://miami.uni-muenster.de/servlets/DocumentServlet?id=4844&amp;XSL.H_main=S_GLOBAL&amp;XSL.H_searchId=searchId" target="_blank">2009: Numerische Methoden zur Erforschung einer N = 1 Super Yang-Mills-Theorie mit SU(2)c und SU(3)c Wilson Fermionen</a></li>
+				<li><a href="http://arxiv.org/abs/0911.0595" target="_blank">2009: Simulations of supersymmetric Yang-Mills theory</a></li>
+				<li><a href="http://arxiv.org/abs/0811.1964" target="_blank">2008: Dynamical simulation of lattice 4d N=1 SYM</a></li>
+                <li><a href="http://arxiv.org/abs/0810.0144" target="_blank">2008: Spectrum of 4d N=1 SYM on the lattice with light dynamical Wilson gluinos</a></li>
+
+                
+               
+            </ul>
+            <h2>Meine Diplomarbeit:</h2>
+            <ul>
+                <li><a href="./Files/ferling_diplom.pdf" target="_top">Monte-Carlo-Simulation eines repulsiven Instanton-Gases</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>Dr. Alexander Ferling</p>
+        </div>
+    </div>
+    <div class="cookie-banner" id="mbmcookie">
+        <a onclick="var d = new Date(); d = new Date(d.getTime() +1000*60*60*24*730); document.cookie = 'mbmcookie=1; expires='+ d.toGMTString() + ';'; document.getElementById('mbmcookie').style.display = 'none';" class="button">Akzeptieren</a>
+        <p class="cookiemessage">Es werden keine personenbezogenen Daten erhoben. <a href="http://www.alexander-ferling.de/dgsvo.html">Datenschutzerklärung</a></p>
+    </div>
+    <script>
+        var r = 0;
+        var a = document.cookie;
+        while(a != ''){
+            while(a.substr(0,1) == ' '){
+                a = a.substr(1,a.length);
+            }
+            var cn = a.substring(0,a.indexOf('='));
+            var cw = a.indexOf(';') != -1 ? a.substring(a.indexOf('=')+1,a.indexOf(';')) : a.substr(a.indexOf('=')+1,a.length);
+            if(cn == 'mbmcookie'){r = cw;}
+            var i = a.indexOf(';')+1;
+            if(i == 0){i = a.length}
+            a = a.substring(i,a.length);
+        }
+        if(r == '1') document.getElementById('mbmcookie').style.display = 'none';
+    </script>
+</body>
+</html>
